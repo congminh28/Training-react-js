@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -16,6 +17,29 @@ class App extends Component {
       </div>
     );
   }
+=======
+import React from 'react';
+import Form from './components/Form';
+import Result from './components/Result';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+function App() {
+
+  return (
+    <div className="App">
+      <Router>
+        <Switch>
+          <Route path="/" exact>
+            <Form />
+          </Route>
+          <Route path="/result">
+            <Result />
+          </Route>
+        </Switch>
+      </Router>
+    </div>
+  );
+>>>>>>> da8a7d8... Demo week 2
 }
 
 export default App;
